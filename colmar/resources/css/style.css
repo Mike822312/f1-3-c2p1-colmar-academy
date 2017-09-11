@@ -1,0 +1,489 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: DimGray;
+}
+
+h1 {
+  font-weight:800;
+  font-size: 2.5rem;
+  line-height: 1.1;
+
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.1;
+
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.1;
+
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.1;
+
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.1;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.logo-container span {
+  /*vertical-align: middle;*/
+
+}
+
+#colmar {
+  font-weight: 800;
+  font-size: 2rem;
+
+}
+
+#academy {
+  font-size: 2rem;
+  font-weight: 200;
+
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+
+}
+
+ul {
+list-style-type: none;
+}
+
+ul li a {
+  margin-left: 16px;
+}
+
+nav.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+#colmar, #academy, nav.desktop {
+  display:none;
+}
+
+nav.mobile {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+}
+
+/* Main Body */
+
+/* Banner */
+
+.banner {
+  display: flex;
+  background-color: Whitesmoke;
+
+}
+
+.banner-image {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+
+
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.banner-right h1, h2 {
+  margin-bottom: 1rem;
+
+}
+
+.banner-right a{
+  text-align: center;
+  background-color: lightgray;
+  padding: 8px 0px;
+  width: 90%;
+  margin-top: 1rem;
+
+}
+
+/* Banner Mobile */
+
+@media only screen and (max-width: 760px) {
+
+.banner {
+  flex-direction: column;
+  width: 100%;
+  align-items:flex-start;
+}
+
+.banner-image {
+  width: 100%;
+  margin: 0px;
+}
+.banner-right h1, h2 {
+  margin-left: 16px;
+  margin-top: 32px;
+
+}
+.banner-right {
+  text-align: left;
+
+}
+
+.banner-right a {
+  text-align: center;
+  margin: 24px 16px 32px 16px;
+  width: 90%;
+}
+}
+
+/* Information  Section & Sidebars*/
+
+.info-container {
+  display: flex;
+
+}
+
+.practicing {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+
+}
+
+.practicing img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+
+}
+.practicing h1, p {
+  margin-bottom: 24px;
+}
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 16px 0px;
+
+}
+
+.sidebar p {
+  margin: 8px 0px;
+}
+
+.sidebar a {
+  font-weight: 800;
+  color: LightSteelBlue;
+}
+
+
+.sidebar-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: .05px dotted lightgray;
+
+}
+
+.sidebar-section h5,p {
+  padding-right: 16px;
+}
+
+.sidebar-section img {
+  width: 35%;
+  margin: 16px;
+}
+
+.sidebar div:nth-child(3n) {
+  background-color: Whitesmoke;
+}
+
+.sidebar-mobile {
+  display: none;
+}
+/* Information Mobile */
+
+@media only screen and (max-width: 760px) {
+
+.practicing, .sidebar {
+  display: none;
+}
+.sidebar-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+
+}
+
+.sidebar-section img {
+width: 85%;
+height: auto;
+margin-left: 16px;
+padding-right: 146px;
+
+}
+
+.sidebar-section:first-child {
+  padding-top: 16px;
+
+}
+
+.sidebar-text {
+  text-align: left;
+  margin-left: 32px;
+  margin-bottom: 64px;
+}
+
+.sidebar-text p {
+  margin-top: 8px;
+}
+
+.sidebar-mobile div:nth-child(3n) {
+  margin-bottom: 0px;
+}
+
+.sidebar-mobile a {
+  font-weight: 800;
+  color: LightSteelBlue;
+}
+
+}
+
+
+/* Courses  Section */
+
+.courses {
+  display: block;
+  background-color: Whitesmoke;
+}
+
+.courses h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+
+}
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 72px;
+}
+
+.eachcourse {
+  width: 250px;
+  background-color: white;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+}
+
+.eachcourse img {
+  width: 100%;
+  height: auto;
+
+}
+
+.coursetext {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 16px 24px 16px;
+
+}
+
+.coursetext h4 {
+  font-weight: 800;
+}
+
+.coursetext h5 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+.courses-mobile {
+  display: none;
+}
+
+/* Courses Mobile */
+
+@media only screen and (max-width: 760px) {
+
+.eachcourse {
+  display: none;
+}
+
+.courses-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.courses {
+  background-color: white;
+  border: 1px solid LightGray;
+}
+.courses-mobile h4 {
+  background-color: LightGray;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+  margin: 8px;
+}
+
+}
+
+
+/* Thesis Section*/
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.thesis-container h1 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.thesis-main {
+  display: flex;
+  margin:32px 24px;
+}
+
+.feature-video {
+  width: 60%;
+  padding-right: 24px;
+
+}
+
+.sidebar.thesis-sidebar {
+  margin-top:0px;
+  margin-bottom:0px;
+
+}
+
+.thesis-main h4 {
+  margin-top: 24px;
+
+}
+
+#graysidebar {
+  background-color: Whitesmoke;
+}
+
+.mobile-video {
+  display: none;
+}
+
+.thesis-container p {
+ margin-top:8px;
+ margin-bottom: 0px;
+ }
+
+
+/* Thesis Mobile */
+
+@media only screen and (max-width:760px){
+
+  .thesis-main, .sidebar {
+    display: none;
+  }
+
+  .mobile-video {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+}
+
+/*Footer */
+
+footer{
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid LightGray;
+}
+
+/* Foot Mobile */
+
+@media only screen and (max-width:760px) {
+
+  nav {
+  display: none;
+  }
+
+  footer {
+    border-top: 0px;
+    margin: 16px;
+  }
+}
